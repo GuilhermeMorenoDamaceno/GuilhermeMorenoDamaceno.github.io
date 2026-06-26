@@ -2,124 +2,245 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Guilherme Moreno | Portfólio</title>
+<title>Guilherme Moreno | Desenvolvedor Java</title>
 
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
 }
 
-body {
-    background: #0f172a;
-    color: #e2e8f0;
+html{
+    scroll-behavior:smooth;
 }
 
-header {
-    text-align: center;
-    padding: 80px 20px;
-    background: #111827;
-}
+body{
 
-header h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-header h2 {
-    color: #38bdf8;
-    margin-bottom: 15px;
-}
-
-header p {
-    max-width: 700px;
-    margin: auto;
-    color: #94a3b8;
-    font-size: 18px;
-}
-
-.btn {
-    display: inline-block;
-    margin: 25px 5px;
-    padding: 12px 25px;
-    background: #38bdf8;
-    color: #0f172a;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-
-
-section {
-
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px 20px;
+    background:#020617;
+    color:#e2e8f0;
 
 }
 
 
-.card {
+header{
 
-    background: #1e293b;
-    padding: 30px;
-    margin-bottom: 25px;
-    border-radius: 15px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
 
-}
-
-
-h3 {
-
-    color: #38bdf8;
-    margin-bottom: 15px;
-
-}
-
-
-.tags span {
-
-    display: inline-block;
-    background: #334155;
-    padding: 8px 15px;
-    border-radius: 20px;
-    margin: 5px;
+    background:
+    linear-gradient(
+    rgba(2,6,23,0.9),
+    rgba(2,6,23,0.9)
+    );
 
 }
 
 
-.project {
+header h1{
 
-    margin-top: 20px;
-    padding: 20px;
-    background: #111827;
-    border-radius: 10px;
-
-}
-
-
-a {
-
-    color: #38bdf8;
+    font-size:55px;
+    margin-bottom:15px;
+    animation: aparecer 1s;
 
 }
 
 
-footer {
+header h2{
 
-    text-align: center;
-    padding: 30px;
-    color: #64748b;
+    color:#38bdf8;
+    margin-bottom:20px;
+
+}
+
+
+header p{
+
+    max-width:700px;
+    color:#94a3b8;
+    font-size:20px;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    margin:25px 8px;
+    padding:12px 25px;
+
+    background:#38bdf8;
+    color:#020617;
+
+    text-decoration:none;
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+section{
+
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+
+}
+
+
+.card{
+
+    background:#0f172a;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    border-radius:20px;
+
+    border:1px solid #1e293b;
+
+    animation: subir 0.8s;
+
+}
+
+
+h3{
+
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-size:25px;
+
+}
+
+
+.tags span{
+
+    display:inline-block;
+
+    background:#1e293b;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    margin:5px;
+
+}
+
+
+.project{
+
+    background:#020617;
+
+    padding:25px;
+
+    border-radius:15px;
+
+}
+
+
+.timeline{
+
+    border-left:3px solid #38bdf8;
+
+    padding-left:20px;
+
+}
+
+
+.timeline div{
+
+    margin-bottom:25px;
+
+}
+
+
+footer{
+
+    text-align:center;
+    padding:30px;
+    color:#64748b;
+
+}
+
+
+
+a{
+
+    color:#38bdf8;
+
+}
+
+
+
+@keyframes aparecer{
+
+from{
+
+opacity:0;
+transform:translateY(-30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+@keyframes subir{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@media(max-width:600px){
+
+header h1{
+
+font-size:40px;
+
+}
 
 }
 
@@ -132,86 +253,150 @@ footer {
 <body>
 
 
+
 <header>
 
 <h1>Guilherme Moreno</h1>
 
+
 <h2>Desenvolvedor Java em formação</h2>
 
+
 <p>
-Desenvolvedor Java em formação | Ciência da Computação
-Foco em Back-end, Banco de Dados e Análise de Dados
+
+Construindo soluções com código, dados e tecnologia.
+Foco em desenvolvimento Back-end, Java e Banco de Dados.
+
 </p>
 
 
-<a class="btn" 
-href="https://github.com/GuilhermeMorenoDamaceno" 
-target="_blank"
-rel="noopener noreferrer">
+
+<a class="btn"
+href="#projetos">
+
+Ver projetos
+
+</a>
+
+
+
+<a class="btn"
+href="https://github.com/GuilhermeMorenoDamaceno"
+target="_blank">
+
 GitHub
+
 </a>
 
 
-<a class="btn" 
-href="https://www.linkedin.com/in/guilherme-analytics" 
-target="_blank"
-rel="noopener noreferrer">
+
+<a class="btn"
+href="https://www.linkedin.com/in/guilherme-analytics"
+target="_blank">
+
 LinkedIn
+
 </a>
+
 
 
 </header>
 
 
 
+
 <section>
+
 
 
 <div class="card">
 
 <h3>Sobre mim</h3>
 
+
 <p>
-Desenvolvedor Java em formação, com foco em desenvolvimento de software, programação orientada a objetos e análise de dados.
 
-Possuo conhecimentos em programação, bancos de dados e desenvolvimento de projetos práticos, aplicando boas práticas de código e buscando constantemente aprimorar minhas habilidades técnicas.
+Atuo no desenvolvimento de projetos utilizando Java,
+programação orientada a objetos e banco de dados.
 
-Busco uma oportunidade de estágio em Tecnologia da Informação para contribuir com soluções eficientes, colaborar com a equipe e evoluir profissionalmente na área de desenvolvimento de software.
+Minha trajetória profissional também contribuiu para
+o desenvolvimento de organização, comunicação e
+resolução de problemas.
+
+Busco uma oportunidade de estágio em Tecnologia da
+Informação para aplicar meus conhecimentos e evoluir
+como desenvolvedor.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Minha jornada</h3>
+
+
+<div class="timeline">
+
+
+<div>
+
+<strong>Experiência profissional</strong>
+
+<p>
+
+Desenvolvimento de habilidades em organização,
+processos e gestão de informações.
+
 </p>
 
 </div>
 
 
 
-<div class="card">
+<div>
 
-<h3>Experiência Profissional</h3>
+<strong>Estudos em Tecnologia</strong>
 
 <p>
 
-Atuação na gestão e coordenação de empreiteiros, realizando acompanhamento
-de atividades, organização de processos e comunicação entre equipes.
-
-Competências desenvolvidas:
+Programação Java, banco de dados,
+análise de dados e desenvolvimento de projetos.
 
 </p>
-
-<br>
-
-<ul>
-
-<li>Organização de processos</li>
-<li>Análise de informações</li>
-<li>Resolução de problemas</li>
-<li>Comunicação e trabalho em equipe</li>
-
-</ul>
 
 </div>
 
 
 
+<div>
+
+<strong>Objetivo atual</strong>
+
+<p>
+
+Ingressar na área de TI através de uma oportunidade
+de estágio.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
 <div class="card">
+
 
 <h3>Tecnologias</h3>
 
@@ -221,12 +406,15 @@ Competências desenvolvidas:
 <span>Java</span>
 <span>JavaScript</span>
 <span>C</span>
+
 <span>SQL</span>
 <span>MySQL</span>
 <span>SQL Server</span>
+
 <span>MongoDB</span>
+
 <span>Power BI</span>
-<span>Excel</span>
+
 <span>Git</span>
 <span>GitHub</span>
 
@@ -237,59 +425,81 @@ Competências desenvolvidas:
 
 
 
-<div class="card">
+
+<div class="card" id="projetos">
+
 
 <h3>Projetos</h3>
 
 
+
 <div class="project">
 
-<h3>Financial Manager Java</h3>
+
+<h3>💰 Financial Manager Java</h3>
+
 
 <p>
 
-Sistema de gerenciamento financeiro desenvolvido em Java.
-
-Aplicação criada para praticar programação orientada a objetos,
-organização de código e lógica de programação.
+Sistema de gerenciamento financeiro desenvolvido
+em Java, aplicando conceitos de programação
+orientada a objetos, organização de código e lógica
+de programação.
 
 </p>
 
 
 <br>
+
 
 <strong>Tecnologias:</strong>
 
 <p>
+
 Java | POO | Git | GitHub
+
 </p>
+
 
 
 <br>
 
-<a href="https://github.com/GuilhermeMorenoDamaceno">
-Ver projeto
+
+<a href="https://github.com/GuilhermeMorenoDamaceno"
+target="_blank">
+
+Ver código
+
 </a>
 
 
-</div>
-
-
 
 </div>
+
+
+</div>
+
 
 
 
 <div class="card">
 
+
 <h3>Certificações</h3>
 
-<ul>
 
-<li>Google Data Analytics - Coursera</li>
+<ul>
+    
+<li> Java avançado</li>
+    
+<li>Google Data Analytics</li>
+
 <li>Google Project Management</li>
-<li>Machine Learning - Udemy</li>
+
+<li>Machine Learning</li>
+
 <li>Full Stack JavaScript</li>
+
 
 </ul>
 
@@ -301,23 +511,28 @@ Ver projeto
 
 <div class="card">
 
+
 <h3>Contato</h3>
 
+
 <p>
+
 📧 Email:
-<a href="mailto:seuemail@gmail.com">
 guilherme_dmaceno@outlook.com
-</a>
+
 </p>
+
 
 <br>
 
+
 <p>
+
 📱 Telefone:
-<a href="tel:+5511999999999">
 (11) 97721-0188
-</a>
+
 </p>
+
 
 </div>
 
@@ -326,13 +541,16 @@ guilherme_dmaceno@outlook.com
 </section>
 
 
+
 <footer>
 
-© 2026 Guilherme Moreno - Portfólio
+© 2026 Guilherme Moreno
 
 </footer>
 
 
+
 </body>
+
 
 </html>
